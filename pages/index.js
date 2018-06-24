@@ -1,8 +1,9 @@
 // @flow
-import * as React from 'react';
+import * as React from 'react'
+import Layout from '../components/layout'
 
 const index = () => (
-  <div>
+  <Layout>
     <h1>My Mapp</h1>
     <style jsx>{`
       h1,
@@ -14,7 +15,7 @@ const index = () => (
         padding: 0;
       }
     `}</style>
-  </div>
-);
+  </Layout>
+)
 
-export default index;
+export default index
