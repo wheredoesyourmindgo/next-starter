@@ -1,0 +1,33 @@
+{
+  "name": "next-material-map",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "serve": "serve -s ./out",
+    "analyze": "cross-env ANALYZE=1 next build"
+  },
+  "dependencies": {
+    "next": "^6.0.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-flowtype": "^2.49.3",
+    "eslint-plugin-jest": "^21.17.0",
+    "eslint-plugin-prettier": "^2.6.1",
+    "eslint-plugin-react": "^7.9.1",
+    "flow": "^0.2.3",
+    "prettier": "^1.13.5",
+    "serve": "^9.1.0",
+    "webpack-bundle-analyzer": "^2.13.1"
+  }
+}
