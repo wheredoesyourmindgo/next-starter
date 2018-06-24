@@ -30,7 +30,7 @@
       }
     ],
     "linebreak-style": ["error", "unix"],
-    "quotes": ["error", "single"],
+    "quotes": ["error", "single", {"avoidEscape": true}],
     "semi": ["warn", "never"],
     "no-console": "off",
     "react/no-unescaped-entities": 0
