@@ -1,10 +1,14 @@
 // @flow
 import * as React from 'react'
 import Layout from '../components/layout'
+import withRoot from '../src/withRoot'
+import Typography from '@material-ui/core/Typography'
 
 const index = () => (
   <Layout>
-    <h1>My Mapp</h1>
+    <Typography variant="display1" gutterBottom>
+      My Mui-Mapp
+    </Typography>
     <style jsx>{`
       h1,
       a {
@@ -18,4 +22,4 @@ const index = () => (
   </Layout>
 )
 
-export default index
+export default withRoot(index)

@@ -8,6 +8,8 @@
     "flowtype",
     "linebreak",
     "mapp",
-    "parens"
+    "parens",
+    "proptypes",
+    "rasterization"
   ]
 }

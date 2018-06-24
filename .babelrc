@@ -1,4 +1,9 @@
 {
   "presets": ["next/babel"],
-  "plugins": ["transform-flow-strip-types"]
+  "plugins": ["transform-flow-strip-types"],
+  "env": {
+    "development": {
+      "plugins": ["flow-react-proptypes"]
+    }
+  }
 }
