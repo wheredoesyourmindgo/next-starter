@@ -27,6 +27,9 @@ const layout = ({children, title = 'This is the default title'}: Props) => (
         <Link href="/contact">
           <a>Contact</a>
         </Link>
+        <Link href="/my-map">
+          <a>Map</a>
+        </Link>
       </nav>
     </header>
     {children}

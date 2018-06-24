@@ -1,0 +1,6 @@
+/* @flow */
+
+declare module 'react-map-gl' {
+  declare export var NavigationControl: Class<React$Component<any, any>>
+  declare export default Class<any>
+}

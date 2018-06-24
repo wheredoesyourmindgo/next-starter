@@ -27,6 +27,7 @@ class MyDocument extends Document {
             name="theme-color"
             content={pageContext.theme.palette.primary.main}
           />
+          <link rel="stylesheet" href="/_next/static/style.css" />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
@@ -35,6 +36,11 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <style jsx>{`
+            body {
+              margin: 0;
+            }
+          `}</style>
         </body>
       </html>
     )

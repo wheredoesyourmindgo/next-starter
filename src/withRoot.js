@@ -1,14 +1,19 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+// @flow
+import * as React from 'react'
 import {MuiThemeProvider} from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import getPageContext from './getPageContext'
 
-function withRoot(Component) {
-  class WithRoot extends React.Component {
-    pageContext = null
+// pageContext is not required. So don't let PropTypes+Flow produce any errors at runtime.
+type Props = {
+  pageContext?: {}
+}
 
-    constructor(props) {
+function withRoot(Component: any) {
+  class WithRoot extends React.Component<Props> {
+    pageContext: any = null
+
+    constructor(props: Props) {
       super(props)
 
       this.pageContext = this.props.pageContext || getPageContext()
@@ -35,10 +40,6 @@ function withRoot(Component) {
         </MuiThemeProvider>
       )
     }
-  }
-
-  WithRoot.propTypes = {
-    pageContext: PropTypes.object
   }
 
   WithRoot.getInitialProps = (ctx) => {

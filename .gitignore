@@ -26,3 +26,7 @@ yarn-error.log*
 /out
 /.next
 /flow-typed
+
+# env
+.env
+.env.production

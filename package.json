@@ -14,12 +14,16 @@
   },
   "dependencies": {
     "@material-ui/core": "^1.2.3",
+    "@zeit/next-css": "^0.2.0",
+    "babel-plugin-inline-dotenv": "^1.1.2",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
     "jss": "^9.8.7",
     "next": "^6.0.3",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-jss": "^8.5.1"
+    "react-jss": "^8.5.1",
+    "react-map-gl": "^3.2.10"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.5",
