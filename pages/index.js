@@ -1,5 +1,6 @@
+// @flow
 import React from 'react'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 import Button from '@material-ui/core/Button'
 import Dialog from '@material-ui/core/Dialog'
 import DialogTitle from '@material-ui/core/DialogTitle'
@@ -11,6 +12,15 @@ import {withStyles} from '@material-ui/core/styles'
 import withRoot from '../src/withRoot'
 import Layout from '../components/layout'
 
+type Props = {
+  classes: any
+  // foo: string
+}
+
+type State = {|
+  open: boolean
+|}
+
 const styles = (theme) => ({
   root: {
     textAlign: 'center',
@@ -18,7 +28,12 @@ const styles = (theme) => ({
   }
 })
 
-class Index extends React.Component {
+class Index extends React.Component<Props, State> {
+  // static defaultProps: Props = {
+  //   foo: 'bar',
+  //   classes: {}
+  // }
+
   state = {
     open: false
   }
@@ -70,10 +85,6 @@ class Index extends React.Component {
       </Layout>
     )
   }
-}
-
-Index.propTypes = {
-  classes: PropTypes.object.isRequired
 }
 
 export default withRoot(withStyles(styles)(Index))
