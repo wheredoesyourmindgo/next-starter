@@ -30,7 +30,7 @@ const layout = ({children, title = 'This is the default title'}: Props) => (
       </nav>
     </header>
     {children}
-    <footer>I`m here to stay</footer>
+    <footer>I`m a foot.</footer>
   </div>
 )
 

@@ -1,0 +1,5 @@
+/* @flow */
+
+declare module 'react-jss/lib/JssProvider' {
+  declare export default Class<any>
+}

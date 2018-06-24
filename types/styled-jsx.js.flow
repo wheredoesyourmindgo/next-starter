@@ -1,0 +1,5 @@
+/* @flow */
+
+declare module 'styled-jsx/server' {
+  declare export default Class<any>
+}
