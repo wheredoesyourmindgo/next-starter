@@ -2,7 +2,8 @@
   "editor.formatOnSave": true,
   "javascript.validate.enable": false,
   "files.associations": {
-    "*.js": "javascriptreact"
+    "*.js": "javascriptreact",
+    "*.flow": "javascriptreact"
   },
   "cSpell.words": [
     "flowtype",
@@ -13,5 +14,12 @@
     "proptypes",
     "rasterization",
     "zeit"
+  ],
+  "projectManager.vscode.ignoredFolders": [
+    "node_modules",
+    "out",
+    "typings",
+    "test",
+    ".next"
   ]
 }

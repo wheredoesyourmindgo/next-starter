@@ -61,6 +61,10 @@ class MyMap extends React.Component<Props, State> {
     this.setState({viewport})
   }
 
+  onClickHandler = (event: any) => {
+    // console.log(event)
+  }
+
   render() {
     // const {viewport, updateViewport} = this.props
 
@@ -70,6 +74,7 @@ class MyMap extends React.Component<Props, State> {
           mapboxApiAccessToken={process.env._MAPBOX_ACCESS_TOKEN_}
           {...this.state.viewport}
           onViewportChange={this.onUpdateViewport}
+          onClick={this.onClickHandler}
         >
           <div style={{position: 'absolute', right: '10px', top: '10px'}}>
             <NavigationControl onViewportChange={this.onUpdateViewport} />
