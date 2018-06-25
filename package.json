@@ -9,7 +9,7 @@
     "start": "next start",
     "export": "next export",
     "serve": "serve ./out",
-    "analyze": "cross-env ANALYZE=1 next build",
+    "analyze": "cross-env ANALYZE=1 next build && cat .next/stats.txt",
     "flow": "flow"
   },
   "dependencies": {
@@ -38,6 +38,7 @@
     "flow-bin": "^0.75.0",
     "prettier": "^1.13.5",
     "serve": "^9.1.0",
-    "webpack-bundle-analyzer": "^2.13.1"
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-bundle-size-analyzer": "^2.7.0"
   }
 }
