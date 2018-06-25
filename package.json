@@ -17,6 +17,7 @@
     "@material-ui/core": "^1.2.3",
     "@zeit/next-css": "^0.2.0",
     "babel-plugin-inline-dotenv": "^1.1.2",
+    "gray-percentage": "^2.0.0",
     "jss": "^9.8.7",
     "next": "^6.0.3",
     "prop-types": "^15.6.2",
@@ -25,7 +26,8 @@
     "react-jss": "^8.5.1",
     "react-map-gl": "^3.2.10",
     "react-typography": "^0.16.13",
-    "typography": "^0.16.17"
+    "typography": "^0.16.17",
+    "typography-breakpoint-constants": "^0.15.10"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.5",
