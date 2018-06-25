@@ -1,6 +1,7 @@
 // @flow
 import * as React from 'react'
 import ReactMapGL, {NavigationControl} from 'react-map-gl'
+import Layout from '../components/layout'
 import 'mapbox-gl/dist/mapbox-gl.css'
 
 type Props = {
@@ -69,18 +70,20 @@ class MyMap extends React.Component<Props, State> {
     // const {viewport, updateViewport} = this.props
 
     return (
-      <div>
-        <ReactMapGL
-          mapboxApiAccessToken={process.env._MAPBOX_ACCESS_TOKEN_}
-          {...this.state.viewport}
-          onViewportChange={this.onUpdateViewport}
-          onClick={this.onClickHandler}
-        >
-          <div style={{position: 'absolute', right: '10px', top: '10px'}}>
-            <NavigationControl onViewportChange={this.onUpdateViewport} />
-          </div>
-        </ReactMapGL>
-      </div>
+      <Layout title="Map">
+        <div>
+          <ReactMapGL
+            mapboxApiAccessToken={process.env._MAPBOX_ACCESS_TOKEN_}
+            {...this.state.viewport}
+            onViewportChange={this.onUpdateViewport}
+            onClick={this.onClickHandler}
+          >
+            <div style={{position: 'absolute', right: '10px', top: '10px'}}>
+              <NavigationControl onViewportChange={this.onUpdateViewport} />
+            </div>
+          </ReactMapGL>
+        </div>
+      </Layout>
     )
   }
 }
