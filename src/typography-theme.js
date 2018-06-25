@@ -1,6 +1,6 @@
 // @flow
 import gray from 'gray-percentage'
-import type {OptionsType} from 'Types'
+import type {OptionsType} from 'typography'
 import {MOBILE_MEDIA_QUERY} from 'typography-breakpoint-constants'
 
 const theme: OptionsType = {

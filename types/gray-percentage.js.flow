@@ -1,0 +1,31 @@
+// @flow
+
+/**
+ * See https://github.com/KyleAMathews/gray-percentage for more info.
+ *
+ * Examples:
+ *  var gray = require('gray-percentage');
+ *
+ *  var textColor = gray(30);
+ *  // textColor = "hsla(0,0%,100%,0.7)"
+ *
+ *  // Get a "cool" gray.
+ *  var background = gray(93, "cool")
+ *  // background = "hsla(237,0.9935851860000025%,100%,0.07)"
+ *
+ *  // Mixin arbitrary hues e.g. Red.
+ *  var sidebarBg = gray(15, 360)
+ *  // sidebarBg = "hsla(360,14.84301465%,100%,0.85)"
+ *
+ *  // Get color for dark background
+ *  var lightGray = gray(85, 0, true)
+ *  // lightGray = "hsla(0, 0%, 100%, 0.85)"
+ */
+
+declare module 'gray-percentage' {
+  declare export default (
+    lightness: number,
+    hue?: number | 'cool' | 'warm' | 'slate',
+    darkBackground?: boolean
+  ) => string
+}

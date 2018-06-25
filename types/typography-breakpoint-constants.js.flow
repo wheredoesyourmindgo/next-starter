@@ -1,0 +1,5 @@
+/* @flow */
+
+declare module 'typography-breakpoint-constants' {
+  declare export var MOBILE_MEDIA_QUERY: any
+}

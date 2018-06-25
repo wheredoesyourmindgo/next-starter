@@ -11,5 +11,6 @@ types/
 [options]
 module.name_mapper='^\(.*\)\.css$' -> 'CSSModule'
 module.system=haste
+module.name_mapper='Types' -> '<PROJECT_ROOT>/node_modules/typography/Types.js'
 
 [strict]
