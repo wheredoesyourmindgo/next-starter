@@ -25,7 +25,6 @@ class MyMap extends React.Component<Props, State> {
     try {
       return {windowWidth: window.innerWidth, windowHeight: window.innerHeight}
     } catch (err) {
-      console.warn(err)
       return {windowWidth: 0, windowHeight: 0}
     }
   }
@@ -33,7 +32,6 @@ class MyMap extends React.Component<Props, State> {
     try {
       this.setState((prevState, {windowWidth, windowHeight}) => {
         if (windowWidth > 0 || windowHeight > 0) {
-          console.log("don't need to do anything.")
           return prevState
         }
         return {
