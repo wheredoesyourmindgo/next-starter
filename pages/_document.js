@@ -4,6 +4,8 @@ import Document, {Head, Main, NextScript} from 'next/document'
 import JssProvider from 'react-jss/lib/JssProvider'
 import flush from 'styled-jsx/server'
 import getPageContext from '../src/getPageContext'
+import typography from '../src/typography'
+import {TypographyStyle, GoogleFont} from 'react-typography'
 
 // @$FlowFixMe
 class MyDocument extends Document {
@@ -32,6 +34,8 @@ class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
           />
+          <TypographyStyle typography={typography} />
+          <GoogleFont typography={typography} />
         </Head>
         <body>
           <Main />

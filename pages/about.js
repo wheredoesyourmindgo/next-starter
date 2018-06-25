@@ -4,7 +4,25 @@ import Layout from '../components/layout'
 
 const about = () => (
   <Layout title="About us">
-    <div>About us</div>
+    <h1>About us</h1>
+    <div>
+      <h2>Rate Adjustment</h2>
+      <p>
+        The Placer County Water Agency (PCWA) Board has adopted new rates and
+        charges for water delivery and service. New rates will be effective
+        January 1, 2018.
+      </p>
+      <p>Read More...</p>
+      <style jsx>{`
+        div {
+          text-alignment: center;
+          max-width: 500px;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+      `}</style>
+    </div>
   </Layout>
 )
 

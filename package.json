@@ -23,7 +23,9 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-jss": "^8.5.1",
-    "react-map-gl": "^3.2.10"
+    "react-map-gl": "^3.2.10",
+    "react-typography": "^0.16.13",
+    "typography": "^0.16.17"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.5",

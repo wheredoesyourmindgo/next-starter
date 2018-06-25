@@ -19,7 +19,7 @@ const layout = ({children, title = 'This is the default title'}: Props) => (
     <header>
       <nav>
         <Link href="/">
-          <a>Home</a>
+          <a className="link">Home</a>
         </Link>|
         <Link href="/about">
           <a>About</a>
@@ -31,6 +31,11 @@ const layout = ({children, title = 'This is the default title'}: Props) => (
           <a>Map</a>
         </Link>
       </nav>
+      <style jsx>{`
+        a {
+          padding: 10px;
+        }
+      `}</style>
     </header>
     {children}
     <footer>I`m a foot.</footer>
