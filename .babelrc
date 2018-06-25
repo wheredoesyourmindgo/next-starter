@@ -9,12 +9,14 @@
             "path": "./.env.production"
           }
         ],
+        "inline-react-svg",
         "transform-flow-strip-types"
       ]
     },
     "development": {
       "plugins": [
         "inline-dotenv",
+        "inline-react-svg",
         "flow-react-proptypes",
         "transform-flow-strip-types"
       ]

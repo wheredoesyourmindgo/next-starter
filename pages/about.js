@@ -1,6 +1,7 @@
 // @flow
 import * as React from 'react'
 import Layout from '../components/layout'
+import Cat from '../components/cat.svg'
 
 const about = () => (
   <Layout title="About us">
@@ -13,6 +14,8 @@ const about = () => (
         January 1, 2018.
       </p>
       <p>Read More...</p>
+      <Cat />
+
       <style jsx>{`
         div {
           text-alignment: center;
