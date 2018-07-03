@@ -29,6 +29,11 @@ class MyMap extends React.Component<Props, State> {
       return {windowWidth: 0, windowHeight: 0}
     }
   }
+
+  /**
+   * Set viewport width and height to window width and height if and only if they are not already set
+   * via getInitialProps. This is useful for a static/ssr rendered page load.
+   */
   componentDidMount() {
     try {
       this.setState((prevState, {windowWidth, windowHeight}) => {
@@ -51,7 +56,7 @@ class MyMap extends React.Component<Props, State> {
   state = {
     viewport: {
       width: this.props.windowWidth || 500,
-      height: this.props.windowHeight || 400,
+      height: this.props.windowHeight || 500,
       latitude: 37.7577,
       longitude: -122.4376,
       zoom: 8

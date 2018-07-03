@@ -11,7 +11,9 @@
     "serve": "serve ./out",
     "analyze": "cross-env ANALYZE=1 next build",
     "stats": "cross-env STATS=1 next build && cat .next/stats.txt",
-    "flow": "flow"
+    "flow": "flow",
+    "attach:chrome": "/Applications/Google\\ Chrome\\ Canary.app/Contents/MacOS/Google\\ Chrome\\ Canary  --remote-debugging-port=9222 --auto-open-devtools-for-tabs --new-window http://localhost:3000",
+    "attach:firefox": "/Applications/Firefox Developer Edition.app/Contents/MacOS/firefox --start-debugger-server 9222 --new-window http://localhost:3000 --devtools"
   },
   "dependencies": {
     "@material-ui/core": "^1.2.3",
