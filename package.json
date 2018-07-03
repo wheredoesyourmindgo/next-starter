@@ -20,6 +20,7 @@
     "@zeit/next-css": "^0.2.0",
     "gray-percentage": "^2.0.0",
     "jss": "^9.8.7",
+    "lodash": "^4.17.10",
     "next": "^6.0.3",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
