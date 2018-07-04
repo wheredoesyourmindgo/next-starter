@@ -21,6 +21,13 @@ module.exports = withCSS({
     if (STATS) {
       config.plugins.push(new WebpackBundleSizeAnalyzerPlugin('stats.txt'))
     }
+    /**
+     * Fix Mapbox GL JS in production. See https://github.com/mapbox/mapbox-gl-js/issues/4348 for more info.
+     */
+    config.module = {
+      ...config.module,
+      noParse: /(mapbox-gl)\.js$/
+    }
 
     return config
   }
